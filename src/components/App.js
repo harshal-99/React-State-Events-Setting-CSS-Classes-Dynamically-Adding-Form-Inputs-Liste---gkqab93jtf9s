@@ -181,14 +181,14 @@ const States = ({ states, setCurrentState, setCurrentCity, setCurrentTown }) => 
 	)
 }
 
-const Card = ({ location, description, name }) => {
+const Card = React.memo(({ location, description, name }) => {
 	return (
 		<div className="card">
 			<h2 id={`${location}-title`}>{name}</h2>
 			<p id={`${location}-description`}>{description}</p>
 		</div>
 	)
-}
+})
 
 function App() {
 	const [currentState, setCurrentState] = useState(0)
