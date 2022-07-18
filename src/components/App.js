@@ -183,8 +183,8 @@ const States = ({ states, setCurrentState, setCurrentCity, setCurrentTown }) => 
 
 const Card = ({ location, description, name }) => {
 	return (
-		<div id={`${location}-title`} className="card">
-			<h2 id={`${location}-name`}>{name}</h2>
+		<div className="card">
+			<h2 id={`${location}-title`}>{name}</h2>
 			<p id={`${location}-description`}>{description}</p>
 		</div>
 	)
